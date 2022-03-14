@@ -36,7 +36,7 @@ font-size: 30pt;}
 }
 #body_hobby
 {  
-    background: url(../img/campo.png);
+    background: url(../img/campo2.png);
     background-repeat: repeat-x repeat-y;
     background-size: cover;
 }
@@ -51,7 +51,7 @@ font-size: 30pt;}
 }
 div{text-align: center;float: left;margin-right: 3%;padding-top: 1.5%;}}
 .p_body{color: black;font-size: 30pt;}
-#img_hobby{margin-left: 1135px;width: 480px;height: 390px;margin-top: 190px;}
+#img_hobby{margin-left: 60%;width: 480px;height: 390px;margin-top: 2%;}
 #body_tpsit{background-color: aqua;}
 hr{margin-bottom: 3%;}
 .a_tpsit{font-size: 20pt;}
