@@ -11,16 +11,49 @@
                 risultato=parseFloat(numero1)*parseFloat(numero2);
                 window.alert("Risultato: "+risultato)
             }
+            function funzioneSomma()
+            {
+                var numero3=document.forms["due_numeri"]["n3"].value;
+                var numero4=document.forms["due_numeri"]["n4"].value;
+                risultato=parseFloat(numero3)+parseFloat(numero4);
+                window.alert("Risultato: "+risultato)
+            }
+            function funzioneDivisione()
+            {
+                var numero5=document.forms["due_numeri"]["n5"].value;
+                var numero6=document.forms["due_numeri"]["n6"].value;
+                risultato=parseFloat(numero5)/parseFloat(numero6);
+                window.alert("Risultato: "+risultato)
+            }
+            function funzioneSottrazione()
+            {
+                var numero7=document.forms["due_numeri"]["n7"].value;
+                var numero8=document.forms["due_numeri"]["n8"].value;
+                risultato=parseFloat(numero7)-parseFloat(numero8);
+                window.alert("Risultato: "+risultato)
+            }
         </script>
     </head>
     <body>
         <a href="../../tpsit.html">Ritorna a TPSIT</a>
         <h1>Inserire dati</h1>
         <form name="due_numeri"><br>
+            <h3>Moltiplicazione</h3>
             Inserire primo numero <input type="text" name="n1"><br><br>
             Inserire secondo numero <input type="text" name="n2"><br><br>
-            <input type="button" value="calcola" onclick="funzioneProdotto()" >
-            <br><br>
+            <input type="button" value="calcola" onclick="funzioneProdotto()" ><br>
+            <h3>Somma</h3>
+            Inserire primo numero <input type="text" name="n3"><br><br>
+            Inserire secondo numero <input type="text" name="n4"><br><br>
+            <input type="button" value="calcola" onclick="funzioneSomma()" ><br>
+            <h3>Divisione</h3>
+            Inserire primo numero <input type="text" name="n5"><br><br>
+            Inserire secondo numero <input type="text" name="n6"><br><br>
+            <input type="button" value="calcola" onclick="funzioneDivisione()" ><br>
+            <h3>Sottrazione</h3>
+            Inserire primo numero <input type="text" name="n7"><br><br>
+            Inserire secondo numero <input type="text" name="n8"><br><br>
+            <input type="button" value="calcola" onclick="funzioneSottrazione()" ><br><br>
         </form>
     </body>
 </html>
