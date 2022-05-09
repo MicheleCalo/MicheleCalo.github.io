@@ -6,22 +6,22 @@
         <script>
             function controllo()
             {
-                var n=document.getElementById("num");
-                var img=document.getElementById("img");
+                var n=document.getElementById("num").value;
+                var image=document.getElementById("img");
                 if (n>18)
                 {
-                  img.src="luna.jpg";
+                  image.src="luna.jpg";
                 }
                 else
                 {
-                   img.src="sole.jpg";
+                   image.src="sole.jpg";
                 }
             }
         </script>
     </head>
     <body>
         <input type="text" id="num">
-        <input type="button" value="clicca per verificare" onclick="controllo()"> <br>
+        <button onclick="controllo()">Clicca per verificare</button> <br>
         <img src="bianco.jpg" id="img">
     </body>
 </html>
