@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="stili.css">
+        <script>
+            function controllo()
+            {
+                var n=document.getElementById("num");
+                var img=document.getElementById("img");
+                if (n>18)
+                {
+                  img.src="luna.jpg";
+                }
+                else
+                {
+                   img.src="sole.jpg";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="num">
+        <input type="button" value="clicca per verificare" onclick="controllo()"> <br>
+        <img src="bianco.jpg" id="img">
+    </body>
+</html>
