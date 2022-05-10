@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="stylesheet" href="css/stili.css">
+        <title>
+            Semaforo voti
+        </title>
+        <script>
+            function controllo()
+            {
+                var valore;
+                valore=document.getElementById("voti").value;
+                if (valore>7) 
+                {
+                    document.getElementById("stampa").innerHTML=("Ottimo voto "+valore);
+                    document.getElementById("stampa").style.color="green";
+                } 
+                else 
+                {
+                    if(valore>=5&&valore<=7)
+                    {
+                        document.getElementById("stampa").innerHTML=("Buon voto "+valore);
+                        document.getElementById("stampa").style.color="orange";
+                    }
+                    else
+                    {
+                        document.getElementById("stampa").innerHTML=("Brutto voto "+valore);
+                        document.getElementById("stampa").style.color="red";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <select name="voto" id="voti">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <button onclick ="controllo()">Clicca</button>
+        <p id="stampa"></p>
+    </body>
+</html>
